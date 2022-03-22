@@ -1,4 +1,4 @@
-import { diff, sum } from "../src/index";
+import { diff, sum, message } from "../src/index";
 import assert from "assert";
 
 describe('Index tests', function() {
@@ -7,5 +7,8 @@ describe('Index tests', function() {
     });
     it('3 - 2 should return 1', function() {
         assert.equal(diff(3, 2), 1);
+    });
+    it('message should return hello', function() {
+        assert.equal(message('hello'), 'hello');
     });
 })

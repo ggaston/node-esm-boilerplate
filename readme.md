@@ -19,4 +19,5 @@ Node.js - 16.14.0 and higher
 ### Limitations
 
 - `ts-node` https://github.com/TypeStrong/ts-node/issues/1007
-- `--watch` is not available for ESM in Mocha: https://mochajs.org/#current-limitations
+- `--watch` is not available for ESM in Mocha: https://mochajs.org/#current-limitations [issues/4374](https://github.com/mochajs/mocha/issues/4374). However `--watch` is working together with `--parallel` which may limit in some cases, but for standard cases I guess it should be ok.
+(More info https://mochajs.org/#parallel-tests).
