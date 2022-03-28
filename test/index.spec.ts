@@ -1,5 +1,6 @@
 import { diff, sum, message } from "../src/index";
 import assert from "assert";
+import hello from "api/hello"
 
 describe('Index tests', function() {
     it('2 + 2 should return 4', function() {
@@ -10,5 +11,8 @@ describe('Index tests', function() {
     });
     it('message should return hello', function() {
         assert.equal(message('hello'), 'hello');
+    });
+    it('hello should return ciao', function() {
+        assert.equal(hello('ciao'), 'ciao');
     });
 })

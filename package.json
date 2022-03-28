@@ -5,7 +5,7 @@
 	"main": "index.ts",
 	"type": "module",
 	"scripts": {
-		"start": "node --loader ts-node/esm --no-warnings src/index.ts",
+		"start": "node --experimental-specifier-resolution=node --loader ./loader.js src/index.ts",
 		"build": "tsc -p .",
 		"test": "mocha",
 		"test:watch": "mocha --parallel --watch",
@@ -28,6 +28,7 @@
 		"eslint": "^8.11.0",
 		"mocha": "^9.2.2",
 		"ts-node": "^10.7.0",
+		"tsconfig-paths": "^3.14.1",
 		"tslib": "^2.3.1",
 		"typescript": "^4.6.2"
 	},

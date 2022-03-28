@@ -21,4 +21,4 @@ Node.js - 16.14.0 and higher
 - `ts-node` https://github.com/TypeStrong/ts-node/issues/1007
 - `--watch` is not available for ESM in Mocha: https://mochajs.org/#current-limitations [issues/4374](https://github.com/mochajs/mocha/issues/4374). However `--watch` is working together with `--parallel` which may limit in some cases, but for standard cases I guess it should be ok.
 (More info https://mochajs.org/#parallel-tests).
-- typescript [path-mapping](https://www.typescriptlang.org/docs/handbook/module-resolution.html#path-mapping) is not working with ESM loader. Workaround with custom loader available on https://github.com/TypeStrong/ts-node/discussions/1450. *(However not working for me)*
+- typescript [path-mapping](https://www.typescriptlang.org/docs/handbook/module-resolution.html#path-mapping) is not working with ESM loader. Workaround with custom loader available on https://github.com/TypeStrong/ts-node/discussions/1450. *(--However not working for me-- This version of loader is working https://github.com/TypeStrong/ts-node/discussions/1450#discussioncomment-1806115)*
