@@ -6,7 +6,7 @@
 	"type": "module",
 	"scripts": {
 		"start": "node --experimental-specifier-resolution=node --loader ./loader.js src/index.ts",
-		"build": "tsc -p .",
+		"build": "tsc -p . --rootDir .",
 		"test": "mocha",
 		"test:watch": "mocha --parallel --watch",
 		"test:cov": "c8 mocha",

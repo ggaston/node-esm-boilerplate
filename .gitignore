@@ -20,6 +20,9 @@ pids
 coverage
 *.lcov
 
+# build
+build
+
 # Dependency directories
 node_modules/
 
